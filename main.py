@@ -16,12 +16,13 @@ class Auto:
         self.marca=marca
         self.motor=motor
         self.registro=registro
-        def cantidadAsientos(self):
-            n=0
-            for i in asientos:
-                if (i!=None):
-                    n+=1
-            return n
+        
+    def cantidadAsientos(self):
+        n=0
+        for i in asientos:
+            if (i!=None):
+                n+=1
+        return n
     
     def verificarIntegridad(self):
         if (self.registro!=self.motor.registro):
